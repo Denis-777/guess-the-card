@@ -3,7 +3,7 @@ export const createGameMenu = () => {
     const title = document.createElement('h2');
     const gameSection = document.querySelector('.game-section__container');
   
-    title.textContent = 'Выбор сложности';
+    title.textContent = 'Difficulty selection';
     title.classList.add('game-menu__title');
 
     gameSection.innerHTML = '';
@@ -14,7 +14,7 @@ export const createGameMenu = () => {
     const createDifficultButton = (difficult) => {
         const button = document.createElement('button');
         button.classList.add('game-menu__difficult-btn');
-            button.textContent = `${difficult} карт`;
+            button.textContent = `${difficult} cards`;
         
          button.addEventListener('click', () => {
              startGame(difficult);
