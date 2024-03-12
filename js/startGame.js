@@ -15,7 +15,7 @@ export const startGame = (difficult) => {
     const restartBtn = document.createElement('button');
 
     gameSection.innerHTML = '';
-    restartBtn.textContent = 'Рестарт';
+    restartBtn.textContent = 'Restart';
     gameTable.classList.add('game-table');
     restartBtn.classList.add('restart-btn');
 
